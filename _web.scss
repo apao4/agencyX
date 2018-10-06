@@ -1,4 +1,6 @@
 @import "_vars";
+@import "sass/_mobile.scss";
+@import "sass/_tablet.scss";
 
 @media (min-width: 769px){
 
@@ -473,6 +475,33 @@ margin-left: 480px;
 	width: 50%; /*640px;*/
 	float: left;
 	/*clear: both;*/
+}
+
+#webDesignA
+{
+	background-color: $yellow-font-color;
+	height: 100px;
+	-ms-transform: skewY(-3deg); /* IE 9 */
+  -webkit-transform: skewY(-3deg); /* Safari */
+  transform: skewY(-3deg);
+	width:100%;
+}
+
+#webDesignA h2 p::first-letter
+{
+	-ms-transform: skewY(3deg); /* IE 9 */
+  -webkit-transform: skewY(3deg); /* Safari */
+  transform: skewY(3deg);
+}
+
+#webDesignA h2
+{
+	color: $light-grey;
+}
+
+#webDesign p:first-child
+{
+		color: $light-grey;
 }
 
 /*PORTFOLIO: GRAPHIC DESIGN*/
