@@ -1,0 +1,509 @@
+@import "_vars";
+
+@media (min-width: 769px){
+
+.png
+{
+display:none !important;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background-color: $main-app-color;
+  font-family: "Helvetica Neue", Avenir, sans-serif; /*change to sass*/
+}
+
+a
+{
+  text-decoration: none;
+  transition: color 0.7s ease;
+  color: $main-font-color;
+}
+
+a:hover
+{
+  color: $main-app-color;
+  text-decoration: underline;
+}
+
+
+/* MENU TOGGLE*/
+
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: black;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+
+
+
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(47deg) translate(2px, -1px);
+  background: black;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-47deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  margin: -100px 0 0 -50px;
+  width: 200px;
+  padding-top: 100px;
+  background: $yellow-font-color;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.7s;
+}
+
+#menu li
+{
+  padding: 15px;
+  font-size: 1.3em;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+
+
+
+
+/*HEADER*/
+
+#header
+{
+position: relative;
+}
+
+#header h1
+{
+color: $yellow-font-color;
+position: absolute;
+top: 40%;
+font-size: 1200%; /*change with media queries*/
+margin-left: 20px;
+line-height: 135px;
+}
+
+
+
+
+
+
+
+
+/*MEET THE TEAM */
+#team
+{
+position: absolute;
+-ms-transform: skewY(20deg);
+-webkit-transform: skewY(20deg);
+transform: skewY(20deg);
+overflow: hidden;
+margin-top:-100px;
+z-index:-2;
+}
+
+/*#team h1
+{
+color: $main-app-color;
+position: absolute;
+top: 15%;
+text-align: right;
+font-size: 300%; /*change with media queries*/
+margin-left: 40%;
+-ms-transform: skewY(-20deg);
+-webkit-transform: skewY(-20deg);
+transform: skewY(-20deg);
+}
+
+
+#team span /*white line under meet the team*/
+{
+  display: block;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  top: 107%;
+  margin-left: 60%;
+  background: $main-app-color;
+}
+/*
+#teamImg
+{
+-webkit-filter: contrast(50%);
+    filter: contrast(50%);
+-ms-transform: skewY(-20deg);
+-webkit-transform: skewY(-20deg);
+transform: skewY(-20deg);
+margin-bottom: -10px;
+
+}
+*/
+
+@media only screen and (min-width: 769px) {
+  #team {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) { //DONT TOUCH
+  #teamWeb {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 767px) { //dont touch this it WORKS
+  #team {
+      display: none;
+  }
+}
+
+#team p
+{
+    color: $main-app-color;
+position: absolute;
+top: 60%;
+text-align: right;
+font-size: 120%; /*change with media queries*/
+margin-left: 10%;
+-ms-transform: skewY(-20deg);
+-webkit-transform: skewY(-20deg);
+transform: skewY(-20deg);
+padding-right: 10%;
+}
+
+.yellowLine
+{
+
+background: $yellow-font-color;
+width: 100%;
+height: 200px;
+position: absolute;
+margin-top:-18%;
+clear: both;
+}
+
+/*teamWeb*/
+#teamWeb
+{
+	width: 1280px;
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 100px;
+}
+
+#teamImgWeb
+{
+  width: 640px;
+  height: auto;
+	float: left;
+	clear: both;
+}
+
+#teamWeb p
+{
+	float: right;
+	text-align: center;
+	width: 540px;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-top: 200px;
+	line-height: 40px;
+	font-size: 18px;
+	font-family: 'Avenir', sans-serif;
+}
+
+/*MEET TEAM*/
+#meetTeam
+{
+	width: 1280px;
+	height: 427px;
+	clear: both;
+	display: block;
+}
+
+/*ALLISON*/
+
+#alli
+{
+	display: block;
+	height: auto;
+	width: 640px;
+}
+
+.alliImg
+{
+
+width: 320px;
+height: auto;
+float: left;
+
+}
+
+#alliTitle
+{
+color: #000;
+text-align: center;
+font-size: 30px;
+}
+
+#alliBio
+{
+	color: black;
+  position: block;
+  text-align: center;
+	width: 320px;
+	float: left;
+}
+
+#alliBio p
+	{
+		position: block;
+		text-align: center;
+		font-size: .9em;
+	}
+
+
+/*SORAYA*/
+
+#soraya
+{
+display: block;
+height: auto;
+float: left;
+width: 640px;
+}
+
+.sorayaImg
+{
+margin-top: -100px;
+margin-bottom: -200px;
+width: 320px;
+height: auto;
+float: left;
+
+}
+
+#sorayaTitle
+{
+color: #000;
+text-align: center;
+font-size: 30px;
+}
+
+#sorayaBio
+{
+	color: black;
+  position: block;
+  text-align: center;
+	width: 320px;
+	float: left;
+	margin-left: 320px;
+}
+
+#sorayaBio p
+{
+	position: block;
+	text-align: center;
+	font-size: .9em;
+	float: right;
+}
+	//QUOTE
+
+
+	#quote
+	{
+		background-color: $light-grey;
+	color: black;
+    position: relative;
+    margin-top: 400px;
+	height: 274px;
+	width: 1280px;
+	}
+
+	#quote p
+	{
+	position: absolute;
+	text-align: center;
+	font-size: 2em;
+	color: $main-app-color;
+	width: 1280px;
+	float: right;
+	font-style: italic;
+	}
+
+
+
+
+/*PORTFOLIO*/
+
+
+.portfolioImg
+{
+ width: 1280px;
+ height: 671px;
+ position: relative;
+}
+
+#portfolio
+{
+position: relative;
+display: block;
+width: 100%;
+margin-top: -100px;
+clear:both;
+}
+
+#portfolioText
+{
+color: $main-app-color;
+position: absolute;
+top: 30%;
+text-align: center;
+font-size: 3.4em;
+margin-left: 480px;
+}
+
+#portfolioAbout
+{
+	width: 1100px;
+	height: 300px;
+	clear: both;
+	padding-left: 90px;
+	padding-right: 90px;
+	text-align: center;
+	padding-top: 50px;
+	line-height: 35px;
+	font-family: 'Avenir', sans-serif;
+}
+
+/*PORTFOLIO: Web Design*/
+#webDesign
+{
+	width: 1280px;
+	overflow: hidden;
+}
+
+#webDesignText
+{
+	width: 40%; /*640px;*/
+	height: 640px;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	float: left;
+	padding-top: 200px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+#webDesignImg
+{
+	width: 50%; /*640px;*/
+	float: left;
+	/*clear: both;*/
+}
+
+/*PORTFOLIO: GRAPHIC DESIGN*/
+
+#graphicDesign
+{
+	width: 100%;
+	display: inline-block;
+
+}
+
+.gdImg
+{
+	width: 320px;
+	height: 320px;
+	padding-top: 16px;
+	float: left;
+}
+
+.logoDesc p
+{
+	background-color: #C0B6AC;
+	width: 15%;
+	height: 200px;
+	float: left;
+	padding-top: 120px;
+	padding-right:5%;
+	padding-left: 5%;
+	text-align: center;
+	font-family: 'Avenir', sans-serif;
+}
+
+
+//END OF WEB
