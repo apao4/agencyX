@@ -1,0 +1,19 @@
+{
+  "name": "pao_pittis_homework1",
+  "version": "1.0.0",
+  "description": "Agency X",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "agency"
+  ],
+  "author": "Allison Pao and Soraya Pittis",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
