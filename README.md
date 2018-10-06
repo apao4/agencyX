@@ -11,8 +11,8 @@ This readme will give you a rundown on the running of our application, who creat
 ## Built With
 
 * Git Hub - used to manage project
-  Gulp - used to 
-  Sass - used to 
+  Gulp - used to convert SASS to CSS
+  Sass - used to minimize repetitive CSS
 
 
 ## Authors
@@ -30,5 +30,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* We took the big image idea from [ShoeShine](https://www.shoeshine.it/)
+* We took inspiration from ShoeShine [ShoeShine](https://www.shoeshine.it/)
 * This post on [Pintrest](https://www.pinterest.ca/pin/739012620080286263/feedback/?invite_code=5b2feb5534a1461fa2fc091c65bf1f82&sender_id=146367194047976735)
