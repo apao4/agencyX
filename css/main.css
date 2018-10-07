@@ -1066,5 +1066,143 @@
     width: 100%;
   }
 }
+@media (min-width: 769px) {
+  .png {
+    display: none !important;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcf9ed;
+    font-family: "Helvetica Neue", Avenir, sans-serif;
+    /*change to sass*/
+  }
+
+  a {
+    text-decoration: none;
+    transition: color 0.7s ease;
+    color: #76944c;
+  }
+
+  a:hover {
+    color: #fcf9ed;
+    text-decoration: underline;
+  }
+
+  /* MENU TOGGLE*/
+  #menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+  }
+
+  #menuToggle span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  /*
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(47deg) translate(2px, -1px);
+    background: black;
+  }
+
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+  }
+
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-47deg) translate(0, -1px);
+  }
+
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  #menu {
+    position: absolute;
+    margin: -100px 0 0 -50px;
+    width: 200px;
+    padding-top: 100px;
+    background: #ffd21f;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.7s;
+  }
+
+  #menu li {
+    padding: 15px;
+    font-size: 1.3em;
+  }
+
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  /*HEADER*/
+  #header {
+    position: relative;
+  }
+
+  #header h1 {
+    color: #ffd21f;
+    position: absolute;
+    top: 40%;
+    font-size: 1200%;
+    /*change with media queries*/
+    margin-left: 20px;
+    line-height: 135px;
+  }
+
+  /*MEET THE TEAM */
+  #team {
+    position: absolute;
+    -ms-transform: skewY(20deg);
+    -webkit-transform: skewY(20deg);
+    transform: skewY(20deg);
+    overflow: hidden;
+    margin-top: -100px;
+    z-index: -2;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
