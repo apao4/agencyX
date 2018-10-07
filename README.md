@@ -31,5 +31,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * We took inspiration from ShoeShine [ShoeShine](https://www.shoeshine.it/)
-* We drew ideas from VIA Rail Canada [VIA Rail] (https://www.viarail.ca/en)
+* We drew ideas from VIA Rail Canada [VIA Rail Canada] (https://www.viarail.ca)
 * A third post from Pinterest inspired our diagonal motif and bold colours [Pintrest](https://www.pinterest.ca/pin/508132770427216190/)
