@@ -1,4 +1,8 @@
-@import "_vars";
-@import "_mobile";
-@import "_tablet";
-@import "web";
+@import 'modules/vars';
+@import 'modules/tablet';
+@import 'modules/web';
+@import "modules/mobile";
+
+.hidden {
+    display: none;
+}

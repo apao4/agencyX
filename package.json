@@ -6,12 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/apao4/agencyX.git"
+  },
   "keywords": [
     "portfolio",
     "agency"
   ],
   "author": "Allison Pao and Soraya Pittis",
   "license": "MIT",
+  "dependencies": {
+    "sass": "^1.13.4"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
