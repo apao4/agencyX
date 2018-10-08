@@ -22,7 +22,7 @@ gulp.task('sass', function() {
 	.pipe(gulp.dest('./css'));
     });
 
-// watch SASS fie for changes, compile
-gulp.task('sass:watch', function (){
+// watch SASS file for changes, compile
+gulp.task('sass:watch', function () {
     gulp.watch('.sass/**/*.scss', ['sass']);
 });
