@@ -22,30 +22,21 @@
 	
 <nav role="navigation">
   <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
+  
     <input type="checkbox" />
     
-    <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
+
     <span></span>
     <span></span>
     <span></span>
     
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
+
     <ul id="menu">
       <a href="#team"><li>Meet the Team</li></a>
-      <a href="#webDesign"><li>Web Design</li></a><!--change in ALLI-->
-      <a href="#graphicDesign"><li>Graphic Design</li></a>
+      <a href="#webDesign"><li>Web Design</li></a>
+	  <a href="#graphicDesign"><li>Graphic Design</li></a>
+	  <a href="#photography"><li>Photography</li></a>
+	  <a href="#contactForm"><li>Contact Us</li></a>
     </ul>
   </div>
 </nav>
@@ -96,10 +87,10 @@
 		
 	<div id="quote">
 		<p>
-		“Creativity is nothing<br> but a mind set free.” <br>
+		“Creativity is nothing<br>but a mind set free.” <br>
 		–Torrie T. Asai
 		</p>
-		<div class="yellowLine"></div>
+		<span></span>
 	</div>
 	
 	<div id="portfolio">
@@ -142,12 +133,21 @@ We at Engage Designs believe a company’s success begins with their webpage.  T
 	
 	<div id="graphicDesignText">
 		<div id="lightbox1">
-		<img class="logo" id="mi" src="images/mi-logo.jpg" alt="M Logo" title="M Logo">
+			<div class="square">
+			<img class="logo content rs" id="mi" src="images/mi-logo.jpg" alt="Mi Logo" title="Mi Logo">
+			</div>
+			<div class="square">
+			<p class="content" id="logotext1">We are super enthusiastic individuals who love meeting and working with new people.</p>
+			</div>
 		</div>
-		<img class="logo" id="seaStudios" src="images/sea-studios.jpg" alt="Sea Studios logo" title="Sea Studio Logo">
+			<div class="square">
+			<p class="content" id="logotext2">Sea Studios hired us to completely rebrand their business. So, we created this logo.</p>
+			</div>
+			<div class="square">
+			<img class="logo content rs" id="seaStudios" src="images/sea-studios.jpg" alt="Sea Studios Logo" title="Sea Studio Logo">
+			</div>
 
-
-		</div>
+	</div>
 	
 	<div id="myModal" class="modal">
 
@@ -161,7 +161,51 @@ We at Engage Designs believe a company’s success begins with their webpage.  T
   <div id="caption"></div>
 </div>
 
-	
+<div id="photography">
+		<h2>PHOTOGRAPHY</h2>
+		<p>Ever since we were young, we both fell in love with photography to which we have both mastered our skills over the years.
+		</p>
+</div>
+
+<div id="photographyImgs">
+		<div class="square">
+			<img class="content rs logo" src="images/tablet-photo1.jpg" alt="Santorini, Greece" title="Santorini, Greece">
+		</div>
+		<div class="square">
+				<img class="content rs logo" src="images/tablet-photo2.jpg" alt="Friuli Venezia Giulia, Italy" title="Friuli Venezia Giulia, Italy">
+		</div>
+		<div class="square">
+				<img class="content rs logo" src="images/tablet-photo3.jpg" alt="Friuli Venezia Giulia, Italy" title="Friuli Venezia Giulia, Italy">
+		</div>
+		<div class="square">
+				<img class="content rs logo" src="images/tablet-photo4.jpg" alt="Venice, Italy" title="Venice, Italy">
+		</div>
+</div>
+
+<div id="contact">
+	<img src= "images/toronto.png" alt="toronto" title="toronto" width="100%">
+	<h2>CONTACT US</h2>
+</div>
+
+<div>
+		<form id="contactForm" action="form.php" method="post">
+				<label for="name">NAME</label>
+				<input type="text" required id="name" name="fullName" size="30" placeholder="John Smith">
+				
+				<label for="email">EMAIL</label>
+				<input type="email" required id="email" size="30" placeholder="123@example.com">
+				
+				<label for="comments">MESSAGE/QUESTION</label>
+				<textarea name="comments" id="comments" required cols="50" rows="7"></textarea>
+			   
+				<input id="submit" type="submit" value="SUBMIT">
+		</form>
+</div>
+
+<footer id="bottom">
+	<span><img src="images/facebook.svg" alt="facebook" title="facebook">
+	<img src="images/instagram.svg" alt="instagram" title="instagram"></span>
+</footer>
 
 
   <script src="js/lightbox.js"></script>
