@@ -10,15 +10,15 @@
     text-decoration: none;
     transition: color 0.7s ease;
     color: #5f5e5e;
-    font-weight: bold;
   }
 
   a:hover {
-    color: #fcf9ed;
+    color: #c0b6ac;
     text-decoration: underline;
+    font-weight: bold;
   }
 
-  .jpg {
+  .png {
     display: none !important;
   }
 
@@ -26,73 +26,37 @@
     display: none !important;
   }
 
-  /* MENU TOGGLE*/
-  #menuToggle {
+  /*NAVIGATION*/
+  #menu li {
+    padding: 5px;
     display: block;
-    position: fixed;
-    top: 50px;
-    left: 50px;
-    z-index: 1;
-  }
-
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-  }
-
-  #menuToggle span {
-    display: block;
-    width: 30px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #5f5e5e;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(47deg) translate(2px, -1px);
-    background: #5f5e5e;
-  }
-
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-  }
-
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-47deg) translate(0, -1px);
+    color: #fcf9ed;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    float: left;
+    width: 15%;
+    font-size: 60%;
+    padding-top: 30px;
   }
 
   #menu {
-    position: fixed;
-    margin: -100px 0 0 -50px;
-    width: 200px;
-    padding-top: 100px;
-    background: #ffd21f;
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.7s;
+    position: fixed;
+    background-color: black;
+    margin-top: -58%;
+    z-index: 1;
+    height: 60px;
+    width: 100%;
+    text-align: center;
   }
 
-  #menu li {
-    padding: 15px;
-    font-size: 1.3em;
+  #menu li:hover {
+    color: #ffd21f;
   }
 
-  #menuToggle input:checked ~ ul {
-    transform: none;
+  #checkbox {
+    display: none;
   }
 
   /*HEADER*/
@@ -103,10 +67,11 @@
   #header h1 {
     color: #ffd21f;
     position: absolute;
-    font-size: 3em;
-    margin-left: 20px;
-    margin-top: -150px;
-    text-shadow: 0px 0px 20px #5f5e5e, 0px 0px 30px #c0b6ac;
+    margin-top: -40%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 5em;
   }
 
   /*MEET THE TEAM */
@@ -117,130 +82,131 @@
 
   #team h1 {
     color: #fcf9ed;
-    position: absolute;
-    top: 5%;
-    text-align: right;
+    text-align: center;
     font-size: 2.4em;
-    margin-left: 40%;
-    margin-right: 10px;
-    text-shadow: 0px 0px 1px #ffd21f, 0px 0px 1px #ffd21f;
+    position: absolute;
+    background-color: #ffd21f;
+    width: 100%;
+    margin-top: 40%;
+    height: 90px;
+  }
+
+  #team h1 br {
+    display: none;
   }
 
   #team span {
     display: block;
-    width: 100px;
+    width: 10%;
     height: 5px;
     position: absolute;
-    top: 107%;
+    text-align: center;
     background: #fcf9ed;
     margin-left: 45%;
+    margin-right: 45%;
   }
 
-  .teamImg {
-    -webkit-filter: contrast(45%);
-    filter: contrast(45%);
-    display: block;
+  #theTeam {
+    width: 100%;
+    text-align: center;
   }
 
   #team p {
-    color: #fcf9ed;
+    color: #5f5e5e;
     position: absolute;
-    text-align: right;
+    text-align: center;
     font-size: 120%;
     margin-left: 10%;
     padding-right: 10%;
-    margin-top: -240px;
+    margin-top: 10%;
   }
 
-  /*ALLISON*/
+  /*ALLISON AND SORAYA*/
   #alli {
     position: relative;
     display: block;
     width: 100%;
-    margin-top: -100px;
     clear: both;
+    margin-top: 49%;
   }
 
   #alliTitle {
-    color: #fcf9ed;
-    position: absolute;
-    top: 60%;
-    text-align: right;
-    font-size: 2.4em;
-    margin-left: 50%;
+    color: #5f5e5e;
+    position: relative;
+    text-align: center;
+    font-size: 90%;
+    width: 50%;
+  }
+
+  #alliTitle br {
+    display: none;
   }
 
   #alliBio {
     color: #5f5e5e;
-    display: block;
-    text-align: right;
-    height: 300px;
+    text-align: center;
+    position: relative;
+    width: 46%;
+    margin: 2%;
+    float: left;
   }
 
   #alliBio p {
-    display: block;
-    text-align: right;
-    font-size: 1.1em;
-    padding: 30px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .alliImg {
+    width: 50%;
+    float: left;
+  }
+
+  .sorayaImg {
+    width: 50%;
+    float: left;
+  }
+
+  .notab {
+    display: none;
   }
 
   /*SORAYA*/
   #soraya {
     position: relative;
-    display: block;
-    width: 100%;
-    margin-top: -100px;
-    clear: both;
+    width: 50%;
+    float: left;
+    margin-top: -20%;
+  }
+
+  #sorayaTitle br {
+    display: none;
   }
 
   #sorayaTitle {
-    color: #fcf9ed;
-    position: absolute;
-    top: 60%;
-    text-align: right;
-    font-size: 2.4em;
-    margin-left: 60%;
+    color: #5f5e5e;
+    text-align: center;
+    font-size: 90%;
+    position: relative;
+    margin-top: 31%;
   }
 
   #sorayaBio {
     color: #5f5e5e;
-    position: block;
-    text-align: right;
-    height: 300px;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 46%;
+    margin: 2%;
+    float: left;
   }
 
   #sorayaBio p {
-    position: block;
-    text-align: right;
-    font-size: 1.1em;
-    padding: 30px;
+    text-align: center;
+    font-size: 0.9em;
   }
 
   #quote {
-    background-color: #c0b6ac;
-    display: block;
-    text-align: right;
-    height: 400px;
-    -ms-transform: skewY(-20deg);
-    -webkit-transform: skewY(-20deg);
-    transform: skewY(-20deg);
-    border-bottom-color: #ffd21f;
-    border-bottom-width: 30px;
-    border-bottom-style: solid;
-  }
-
-  #quote p {
-    display: block;
-    text-align: center;
-    font-size: 2em;
-    -ms-transform: skewY(20deg);
-    -webkit-transform: skewY(20deg);
-    transform: skewY(20deg);
-    color: #fcf9ed;
-    padding-top: 30%;
-    font-style: italic;
-    line-height: 50px;
-    letter-spacing: 4px;
+    display: none;
   }
 
   /*PORTFOLIO*/
@@ -248,8 +214,8 @@
     position: relative;
     display: block;
     width: 100%;
-    margin-top: -100px;
-    clear: both;
+    margin-top: 40%;
+    text-align: center;
   }
 
   #portfolioText {
@@ -258,68 +224,52 @@
     top: 30%;
     text-align: center;
     font-size: 2.4em;
-    margin-left: 80px;
+    width: 100%;
   }
 
   #portfolioAbout {
     height: 300px;
+    text-align: center;
   }
 
   #portfolioAbout p {
     text-align: center;
     color: #5f5e5e;
     font-size: 1.1em;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .greyLine {
-    background-color: #c0b6ac;
-    height: 40px;
-    width: 100%;
-    display: block;
-    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    float: left;
+    margin-top: 7%;
   }
 
   #webDesign {
     background-color: #ffd21f;
     display: block;
     text-align: right;
-    height: 400px;
-    -ms-transform: skewY(-20deg);
-    -webkit-transform: skewY(-20deg);
-    transform: skewY(-20deg);
+    height: 300px;
   }
 
   #webDesign h2 {
     color: #5f5e5e;
-    -ms-transform: skewY(20deg);
-    -webkit-transform: skewY(20deg);
-    transform: skewY(20deg);
     font-size: 2.4em;
     padding: 20px;
     margin-right: 20px;
+    text-align: center;
   }
 
   #webDesign p {
     color: #5f5e5e;
-    -ms-transform: skewY(20deg);
-    -webkit-transform: skewY(20deg);
-    transform: skewY(20deg);
     text-align: center;
-    padding: 20px;
-    padding-top: 20px;
-    font-size: 1.1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.4em;
     line-height: 1.3em;
   }
 
   .webDesignImg {
-    -ms-transform: skewY(20deg);
-    -webkit-transform: skewY(20deg);
-    transform: skewY(20deg);
     display: block;
     position: relative;
-    padding-top: 150px;
   }
 
   #webDesignText {
@@ -328,57 +278,48 @@
     display: block;
     height: 200px;
     width: 100%;
-    margin-top: 380px;
+    margin-top: 55%;
+    margin-bottom: -20%;
   }
 
   #webDesignText p {
     color: #5f5e5e;
     text-align: center;
-    padding: 30px;
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.2em;
+    padding: 3%;
   }
 
   #graphicDesign {
     background-color: #ffd21f;
     display: block;
-    text-align: right;
-    height: 400px;
-    -ms-transform: skewY(20deg);
-    -webkit-transform: skewY(20deg);
-    transform: skewY(20deg);
+    text-align: center;
+    height: 300px;
   }
 
   #graphicDesign h2 {
     color: #5f5e5e;
-    -ms-transform: skewY(-20deg);
-    -webkit-transform: skewY(-20deg);
-    transform: skewY(-20deg);
     font-size: 2.4em;
-    padding: 20px;
-    padding-top: 40px;
     margin-left: 5px;
-    text-align: left;
-    margin-top: 100px;
+    padding-top: 5%;
+    text-align: center;
+    margin-top: 20%;
   }
 
   #graphicDesign p {
     color: #5f5e5e;
-    -ms-transform: skewY(-20deg);
-    -webkit-transform: skewY(-20deg);
-    transform: skewY(-20deg);
     text-align: center;
-    padding: 20px;
-    font-size: 1.1em;
+    font-size: 1.4em;
     line-height: 1.2em;
     position: absolute;
     display: block;
+    padding-right: 5%;
+    padding-left: 5%;
   }
 
   #graphicDesignText {
     width: 100%;
     background-color: #c0b6ac;
-    margin-top: 18%;
   }
 
   #mi {
@@ -411,6 +352,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    font-size: 1.6em;
   }
 
   .content .rs {
@@ -444,7 +386,7 @@
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 150px;
+    padding-top: 105px;
     left: 0;
     top: 0;
     width: 100%;
@@ -516,51 +458,38 @@
   }
 
   #lightbox {
-    padding-top: 15px;
     text-align: center;
     padding-bottom: 15px;
   }
 
   .modal-content {
-    width: 100%;
+    width: 80%;
   }
 
   /*PHOTOGRAPHY*/
   #photography {
     background-color: #ffd21f;
-    height: 400px;
-    -ms-transform: skewY(-20deg);
-    -webkit-transform: skewY(-20deg);
-    transform: skewY(-20deg);
-    margin-top: 135%;
+    height: 300px;
+    margin-top: 100%;
   }
 
   #photography h2 {
     color: #5f5e5e;
-    -ms-transform: skewY(20deg);
-    -webkit-transform: skewY(20deg);
-    transform: skewY(20deg);
     font-size: 2.4em;
-    padding: 20px;
     margin-right: 20px;
-    text-align: right;
-    padding-top: 20%;
+    text-align: center;
+    padding-top: 10%;
   }
 
   #photography p {
     color: #5f5e5e;
-    -ms-transform: skewY(20deg);
-    -webkit-transform: skewY(20deg);
-    transform: skewY(20deg);
     text-align: center;
     padding: 20px;
-    padding-top: 20px;
-    font-size: 1.1em;
+    font-size: 1.4em;
     line-height: 1.3em;
   }
 
   #photographyImgs {
-    margin-top: 20%;
     cursor: pointer;
   }
 
@@ -602,22 +531,26 @@
 
   #contactForm input {
     width: 100%;
-    height: 20px;
+    height: 30px;
+  }
+
+  #comments {
+    width: 100%;
   }
 
   /*FOOTER*/
   #bottom {
-    background-color: #5f5e5e;
+    background-color: #c0b6ac;
     width: 100%;
-    height: 50px;
+    height: 80px;
     margin-top: 150%;
   }
 
   footer img {
-    width: 40%;
-    height: 40%;
+    height: 50%;
+    margin-top: 20px;
+    margin-right: 15px;
     float: right;
-    display: inline;
     cursor: pointer;
     filter: brightness(0) invert(1);
   }
@@ -646,89 +579,33 @@
     text-decoration: underline;
   }
 
-  /* MENU TOGGLE*/
-  #menuToggle {
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    z-index: 1;
-  }
-
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
-  }
-
-  #menuToggle span {
-    display: block;
-    width: 30px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: black;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-
-  /*
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(47deg) translate(2px, -1px);
-    background: black;
-  }
-
-  /*
-   * But let's hide the middle one.
-   */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-  }
-
-  /*
-   * Ohyeah and the last one should go the other direction
-   */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-47deg) translate(0, -1px);
-  }
-
-  /*
-   * Make this absolute positioned
-   * at the top left of the screen
-   */
-  #menu {
-    position: absolute;
-    margin: -100px 0 0 -50px;
-    width: 200px;
-    padding-top: 100px;
-    background: #ffd21f;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.7s;
-  }
-
+  /*NAVIGATION*/
   #menu li {
-    padding: 15px;
-    font-size: 1.3em;
+    padding: 5px;
+    display: block;
+    color: #fcf9ed;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    float: left;
+    width: 15%;
+    font-size: 60%;
+    padding-top: 25px;
   }
 
-  #menuToggle input:checked ~ ul {
-    transform: none;
+  #menu {
+    list-style-type: none;
+    position: fixed;
+    background-color: black;
+    margin-top: -58%;
+    z-index: 1;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu li:hover {
+    color: #ffd21f;
   }
 
   /*HEADER*/
@@ -1209,8 +1086,8 @@
   }
 
   #alliBio p {
-    display: block;
     text-align: right;
+    display: block;
     font-size: 1.1em;
     padding: 30px;
   }
@@ -1636,19 +1513,23 @@
     height: 20px;
   }
 
+  #comments {
+    width: 100%;
+  }
+
   /*FOOTER*/
   #bottom {
-    background-color: #5f5e5e;
+    background-color: #c0b6ac;
     width: 100%;
     height: 50px;
     margin-top: 150%;
   }
 
   footer img {
-    width: 40%;
     height: 40%;
+    margin-top: 10px;
+    margin-right: 15px;
     float: right;
-    display: inline;
     cursor: pointer;
     filter: brightness(0) invert(1);
   }

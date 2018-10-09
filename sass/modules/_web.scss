@@ -26,106 +26,36 @@ a:hover
   text-decoration: underline;
 }
 
-
-/* MENU TOGGLE*/
-
-
-#menuToggle
-{
-  display: block;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  z-index: 1;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-}
-
-#menuToggle span
-{
-  display: block;
-  width: 30px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: black;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-
-
-
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(47deg) translate(2px, -1px);
-  background: black;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-47deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  margin: -100px 0 0 -50px;
-  width: 200px;
-  padding-top: 100px;
-  background: $yellow-font-color;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.7s;
-}
+/*NAVIGATION*/
 
 #menu li
 {
-  padding: 15px;
-  font-size: 1.3em;
+  padding: 5px;
+  display: block;
+  color: $main-app-color;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  float: left;
+  width: 15%;
+  font-size: 60%;
+  padding-top: 25px;
 }
 
 
-#menuToggle input:checked ~ ul
-{
-  transform: none;
+#menu{
+	list-style-type: none;
+	position: fixed;
+	background-color: black;
+	margin-top: -58%;
+	z-index: 1;
+	height: 60px;
+	width: 100%;
+	text-align: center;
+}
+
+#menu li:hover{
+	color: $yellow-font-color;
 }
 
 
