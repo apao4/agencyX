@@ -9,7 +9,8 @@
   a {
     text-decoration: none;
     transition: color 0.7s ease;
-    color: #76944c;
+    color: #5f5e5e;
+    font-weight: bold;
   }
 
   a:hover {
@@ -28,7 +29,7 @@
   /* MENU TOGGLE*/
   #menuToggle {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 50px;
     z-index: 1;
@@ -43,9 +44,7 @@
     left: -5px;
     cursor: pointer;
     opacity: 0;
-    /* hide this */
     z-index: 2;
-    /* and place it over the hamburger */
   }
 
   #menuToggle span {
@@ -75,7 +74,7 @@
   }
 
   #menu {
-    position: absolute;
+    position: fixed;
     margin: -100px 0 0 -50px;
     width: 200px;
     padding-top: 100px;
@@ -104,10 +103,10 @@
   #header h1 {
     color: #ffd21f;
     position: absolute;
-    font-size: 5em;
-    /*change with media queries*/
+    font-size: 3em;
     margin-left: 20px;
-    margin-top: -200px;
+    margin-top: -150px;
+    text-shadow: 0px 0px 20px #5f5e5e, 0px 0px 30px #c0b6ac;
   }
 
   /*MEET THE TEAM */
@@ -117,14 +116,14 @@
   }
 
   #team h1 {
-    color: white;
+    color: #fcf9ed;
     position: absolute;
     top: 5%;
     text-align: right;
     font-size: 2.4em;
-    /*change with media queries*/
-    margin-left: 60%;
-    margin-right: 15px;
+    margin-left: 40%;
+    margin-right: 10px;
+    text-shadow: 0px 0px 1px #ffd21f, 0px 0px 1px #ffd21f;
   }
 
   #team span {
@@ -133,25 +132,24 @@
     height: 5px;
     position: absolute;
     top: 107%;
-    margin-left: 60%;
     background: #fcf9ed;
-    margin-right: 15px;
+    margin-left: 45%;
   }
 
   .teamImg {
-    -webkit-filter: contrast(50%);
-    filter: contrast(50%);
+    -webkit-filter: contrast(45%);
+    filter: contrast(45%);
     display: block;
   }
 
   #team p {
     color: #fcf9ed;
     position: absolute;
-    top: 60%;
     text-align: right;
     font-size: 120%;
     margin-left: 10%;
     padding-right: 10%;
+    margin-top: -240px;
   }
 
   /*ALLISON*/
@@ -169,11 +167,11 @@
     top: 60%;
     text-align: right;
     font-size: 2.4em;
-    margin-left: 60%;
+    margin-left: 50%;
   }
 
   #alliBio {
-    color: black;
+    color: #5f5e5e;
     display: block;
     text-align: right;
     height: 300px;
@@ -205,7 +203,7 @@
   }
 
   #sorayaBio {
-    color: black;
+    color: #5f5e5e;
     position: block;
     text-align: right;
     height: 300px;
@@ -226,6 +224,9 @@
     -ms-transform: skewY(-20deg);
     -webkit-transform: skewY(-20deg);
     transform: skewY(-20deg);
+    border-bottom-color: #ffd21f;
+    border-bottom-width: 30px;
+    border-bottom-style: solid;
   }
 
   #quote p {
@@ -237,6 +238,9 @@
     transform: skewY(20deg);
     color: #fcf9ed;
     padding-top: 30%;
+    font-style: italic;
+    line-height: 50px;
+    letter-spacing: 4px;
   }
 
   /*PORTFOLIO*/
@@ -263,6 +267,10 @@
 
   #portfolioAbout p {
     text-align: center;
+    color: #5f5e5e;
+    font-size: 1.1em;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .greyLine {
@@ -284,7 +292,7 @@
   }
 
   #webDesign h2 {
-    color: #c0b6ac;
+    color: #5f5e5e;
     -ms-transform: skewY(20deg);
     -webkit-transform: skewY(20deg);
     transform: skewY(20deg);
@@ -294,14 +302,15 @@
   }
 
   #webDesign p {
-    color: #c0b6ac;
+    color: #5f5e5e;
     -ms-transform: skewY(20deg);
     -webkit-transform: skewY(20deg);
     transform: skewY(20deg);
     text-align: center;
     padding: 20px;
     padding-top: 20px;
-    font-size: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.3em;
   }
 
   .webDesignImg {
@@ -310,7 +319,7 @@
     transform: skewY(20deg);
     display: block;
     position: relative;
-    padding-top: 100px;
+    padding-top: 150px;
   }
 
   #webDesignText {
@@ -319,13 +328,15 @@
     display: block;
     height: 200px;
     width: 100%;
-    margin-top: 480px;
+    margin-top: 380px;
   }
 
   #webDesignText p {
-    color: #fcf9ed;
+    color: #5f5e5e;
     text-align: center;
     padding: 30px;
+    font-size: 1.1em;
+    line-height: 1.2em;
   }
 
   #graphicDesign {
@@ -339,66 +350,83 @@
   }
 
   #graphicDesign h2 {
-    color: #c0b6ac;
+    color: #5f5e5e;
     -ms-transform: skewY(-20deg);
     -webkit-transform: skewY(-20deg);
     transform: skewY(-20deg);
     font-size: 2.4em;
     padding: 20px;
+    padding-top: 40px;
     margin-left: 5px;
     text-align: left;
     margin-top: 100px;
   }
 
   #graphicDesign p {
-    color: #c0b6ac;
+    color: #5f5e5e;
     -ms-transform: skewY(-20deg);
     -webkit-transform: skewY(-20deg);
     transform: skewY(-20deg);
     text-align: center;
     padding: 20px;
-    padding-top: 20px;
-    font-size: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.2em;
     position: absolute;
     display: block;
   }
 
   #graphicDesignText {
     width: 100%;
-    background-color: #000;
-    margin-top: 200px;
-    height: 450px;
+    background-color: #c0b6ac;
+    margin-top: 18%;
   }
 
   #mi {
-    width: 50%;
-    float: left;
-    display: block;
-    position: relative;
+    cursor: pointer;
   }
 
-  #miText {
-    width: 50%;
-    float: left;
+  #logotext1 {
     color: #fcf9ed;
-    position: relative;
-    display: block;
-    position: relative;
-  }
-
-  #seaStudiosText {
-    width: 50%;
-    float: left;
-    color: #fcf9ed;
-    display: block;
-    position: relative;
+    text-align: center;
   }
 
   #seaStudios {
-    width: 50%;
+    cursor: pointer;
+  }
+
+  #logotext2 {
+    color: #fcf9ed;
+    text-align: center;
+  }
+
+  #seaStudios:hover {
+    opacity: 0.8;
+  }
+
+  #mi:hover {
+    opacity: 0.8;
+  }
+
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .content .rs {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .square {
     float: left;
-    display: block;
     position: relative;
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: #c0b6ac;
+    overflow: hidden;
   }
 
   #myImg {
@@ -422,11 +450,8 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: black;
-    /* Fallback color */
+    background-color: #5f5e5e;
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
   }
 
   /* Modal Content (Image) */
@@ -490,27 +515,111 @@
     cursor: pointer;
   }
 
-  .pic {
-    width: 250px;
-    height: 250px;
-    padding: 5px;
-    text-align: center;
-    opacity: 0.9;
-  }
-
   #lightbox {
     padding-top: 15px;
     text-align: center;
     padding-bottom: 15px;
   }
 
-  .pic:hover {
-    opacity: 0.5;
+  .modal-content {
+    width: 100%;
+  }
+
+  /*PHOTOGRAPHY*/
+  #photography {
+    background-color: #ffd21f;
+    height: 400px;
+    -ms-transform: skewY(-20deg);
+    -webkit-transform: skewY(-20deg);
+    transform: skewY(-20deg);
+    margin-top: 135%;
+  }
+
+  #photography h2 {
+    color: #5f5e5e;
+    -ms-transform: skewY(20deg);
+    -webkit-transform: skewY(20deg);
+    transform: skewY(20deg);
+    font-size: 2.4em;
+    padding: 20px;
+    margin-right: 20px;
+    text-align: right;
+    padding-top: 20%;
+  }
+
+  #photography p {
+    color: #5f5e5e;
+    -ms-transform: skewY(20deg);
+    -webkit-transform: skewY(20deg);
+    transform: skewY(20deg);
+    text-align: center;
+    padding: 20px;
+    padding-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.3em;
+  }
+
+  #photographyImgs {
+    margin-top: 20%;
     cursor: pointer;
   }
 
-  .modal-content {
+  #photographyImgs img:hover {
+    opacity: 0.7;
+  }
+
+  /*CONTACT US*/
+  #contact h2 {
+    color: #fcf9ed;
+    text-align: center;
+    font-size: 2.4em;
+    margin-top: -50%;
+  }
+
+  #contactForm {
+    float: left;
+    letter-spacing: 0.5px;
+    font: 15px arial, sans-serif;
+    line-height: 3em;
+    padding: 10%;
+    width: 80%;
+    margin-top: 30%;
+  }
+
+  #contactForm label {
+    display: block;
+    color: #5f5e5e;
+  }
+
+  #submit {
+    color: #5f5e5e;
+    padding: 5px;
+    border-radius: px;
+    background-color: #ffd21f;
+    width: 20% !important;
+    cursor: pointer;
+  }
+
+  #contactForm input {
     width: 100%;
+    height: 20px;
+  }
+
+  /*FOOTER*/
+  #bottom {
+    background-color: #5f5e5e;
+    width: 100%;
+    height: 50px;
+    margin-top: 150%;
+  }
+
+  footer img {
+    width: 40%;
+    height: 40%;
+    float: right;
+    display: inline;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
   }
 }
 @media (min-width: 769px) {
@@ -618,9 +727,6 @@
     font-size: 1.3em;
   }
 
-  /*
-   * And let's slide it in from the left
-   */
   #menuToggle input:checked ~ ul {
     transform: none;
   }
@@ -1031,6 +1137,7 @@
     font-size: 3em;
     margin-left: 20px;
     margin-top: -150px;
+    text-shadow: 0px 0px 20px #5f5e5e, 0px 0px 30px #c0b6ac;
   }
 
   /*MEET THE TEAM */
@@ -1045,8 +1152,9 @@
     top: 5%;
     text-align: right;
     font-size: 2.4em;
-    margin-left: 60%;
-    margin-right: 15px;
+    margin-left: 40%;
+    margin-right: 10px;
+    text-shadow: 0px 0px 1px #ffd21f, 0px 0px 1px #ffd21f;
   }
 
   #team span {
@@ -1055,26 +1163,24 @@
     height: 5px;
     position: absolute;
     top: 107%;
-    margin-left: 60%;
     background: #fcf9ed;
-    margin-right: 15px;
+    margin-left: 45%;
   }
 
   .teamImg {
-    -webkit-filter: contrast(50%);
-    filter: contrast(50%);
+    -webkit-filter: contrast(45%);
+    filter: contrast(45%);
     display: block;
   }
 
   #team p {
     color: #fcf9ed;
     position: absolute;
-    top: 60%;
     text-align: right;
     font-size: 120%;
-    /*change with media queries*/
     margin-left: 10%;
     padding-right: 10%;
+    margin-top: -240px;
   }
 
   /*ALLISON*/
@@ -1096,7 +1202,7 @@
   }
 
   #alliBio {
-    color: black;
+    color: #5f5e5e;
     display: block;
     text-align: right;
     height: 300px;
@@ -1128,7 +1234,7 @@
   }
 
   #sorayaBio {
-    color: black;
+    color: #5f5e5e;
     position: block;
     text-align: right;
     height: 300px;
@@ -1149,6 +1255,9 @@
     -ms-transform: skewY(-20deg);
     -webkit-transform: skewY(-20deg);
     transform: skewY(-20deg);
+    border-bottom-color: #ffd21f;
+    border-bottom-width: 30px;
+    border-bottom-style: solid;
   }
 
   #quote p {
@@ -1160,6 +1269,9 @@
     transform: skewY(20deg);
     color: #fcf9ed;
     padding-top: 30%;
+    font-style: italic;
+    line-height: 50px;
+    letter-spacing: 4px;
   }
 
   /*PORTFOLIO*/
@@ -1186,6 +1298,10 @@
 
   #portfolioAbout p {
     text-align: center;
+    color: #5f5e5e;
+    font-size: 1.1em;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .greyLine {
@@ -1207,7 +1323,7 @@
   }
 
   #webDesign h2 {
-    color: #c0b6ac;
+    color: #5f5e5e;
     -ms-transform: skewY(20deg);
     -webkit-transform: skewY(20deg);
     transform: skewY(20deg);
@@ -1217,14 +1333,15 @@
   }
 
   #webDesign p {
-    color: #c0b6ac;
+    color: #5f5e5e;
     -ms-transform: skewY(20deg);
     -webkit-transform: skewY(20deg);
     transform: skewY(20deg);
     text-align: center;
     padding: 20px;
     padding-top: 20px;
-    font-size: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.3em;
   }
 
   .webDesignImg {
@@ -1233,7 +1350,7 @@
     transform: skewY(20deg);
     display: block;
     position: relative;
-    padding-top: 100px;
+    padding-top: 150px;
   }
 
   #webDesignText {
@@ -1242,13 +1359,15 @@
     display: block;
     height: 200px;
     width: 100%;
-    margin-top: 480px;
+    margin-top: 380px;
   }
 
   #webDesignText p {
-    color: #fcf9ed;
+    color: #5f5e5e;
     text-align: center;
     padding: 30px;
+    font-size: 1.1em;
+    line-height: 1.2em;
   }
 
   #graphicDesign {
@@ -1262,66 +1381,83 @@
   }
 
   #graphicDesign h2 {
-    color: #c0b6ac;
+    color: #5f5e5e;
     -ms-transform: skewY(-20deg);
     -webkit-transform: skewY(-20deg);
     transform: skewY(-20deg);
     font-size: 2.4em;
     padding: 20px;
+    padding-top: 40px;
     margin-left: 5px;
     text-align: left;
     margin-top: 100px;
   }
 
   #graphicDesign p {
-    color: #c0b6ac;
+    color: #5f5e5e;
     -ms-transform: skewY(-20deg);
     -webkit-transform: skewY(-20deg);
     transform: skewY(-20deg);
     text-align: center;
     padding: 20px;
-    padding-top: 20px;
-    font-size: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.2em;
     position: absolute;
     display: block;
   }
 
   #graphicDesignText {
     width: 100%;
-    background-color: #000;
-    margin-top: 200px;
-    height: 450px;
+    background-color: #c0b6ac;
+    margin-top: 18%;
   }
 
   #mi {
-    width: 50%;
-    float: left;
-    display: block;
-    position: relative;
+    cursor: pointer;
   }
 
-  #miText {
-    width: 50%;
-    float: left;
+  #logotext1 {
     color: #fcf9ed;
-    position: relative;
-    display: block;
-    position: relative;
-  }
-
-  #seaStudiosText {
-    width: 50%;
-    float: left;
-    color: #fcf9ed;
-    display: block;
-    position: relative;
+    text-align: center;
   }
 
   #seaStudios {
-    width: 50%;
+    cursor: pointer;
+  }
+
+  #logotext2 {
+    color: #fcf9ed;
+    text-align: center;
+  }
+
+  #seaStudios:hover {
+    opacity: 0.8;
+  }
+
+  #mi:hover {
+    opacity: 0.8;
+  }
+
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .content .rs {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .square {
     float: left;
-    display: block;
     position: relative;
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: #c0b6ac;
+    overflow: hidden;
   }
 
   #myImg {
@@ -1345,11 +1481,8 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: black;
-    /* Fallback color */
+    background-color: #5f5e5e;
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
   }
 
   /* Modal Content (Image) */
@@ -1413,27 +1546,111 @@
     cursor: pointer;
   }
 
-  .pic {
-    width: 250px;
-    height: 250px;
-    padding: 5px;
-    text-align: center;
-    opacity: 0.9;
-  }
-
   #lightbox {
     padding-top: 15px;
     text-align: center;
     padding-bottom: 15px;
   }
 
-  .pic:hover {
-    opacity: 0.5;
+  .modal-content {
+    width: 100%;
+  }
+
+  /*PHOTOGRAPHY*/
+  #photography {
+    background-color: #ffd21f;
+    height: 400px;
+    -ms-transform: skewY(-20deg);
+    -webkit-transform: skewY(-20deg);
+    transform: skewY(-20deg);
+    margin-top: 135%;
+  }
+
+  #photography h2 {
+    color: #5f5e5e;
+    -ms-transform: skewY(20deg);
+    -webkit-transform: skewY(20deg);
+    transform: skewY(20deg);
+    font-size: 2.4em;
+    padding: 20px;
+    margin-right: 20px;
+    text-align: right;
+    padding-top: 20%;
+  }
+
+  #photography p {
+    color: #5f5e5e;
+    -ms-transform: skewY(20deg);
+    -webkit-transform: skewY(20deg);
+    transform: skewY(20deg);
+    text-align: center;
+    padding: 20px;
+    padding-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.3em;
+  }
+
+  #photographyImgs {
+    margin-top: 20%;
     cursor: pointer;
   }
 
-  .modal-content {
+  #photographyImgs img:hover {
+    opacity: 0.7;
+  }
+
+  /*CONTACT US*/
+  #contact h2 {
+    color: #fcf9ed;
+    text-align: center;
+    font-size: 2.4em;
+    margin-top: -50%;
+  }
+
+  #contactForm {
+    float: left;
+    letter-spacing: 0.5px;
+    font: 15px arial, sans-serif;
+    line-height: 3em;
+    padding: 10%;
+    width: 80%;
+    margin-top: 30%;
+  }
+
+  #contactForm label {
+    display: block;
+    color: #5f5e5e;
+  }
+
+  #submit {
+    color: #5f5e5e;
+    padding: 5px;
+    border-radius: px;
+    background-color: #ffd21f;
+    width: 20% !important;
+    cursor: pointer;
+  }
+
+  #contactForm input {
     width: 100%;
+    height: 20px;
+  }
+
+  /*FOOTER*/
+  #bottom {
+    background-color: #5f5e5e;
+    width: 100%;
+    height: 50px;
+    margin-top: 150%;
+  }
+
+  footer img {
+    width: 40%;
+    height: 40%;
+    float: right;
+    display: inline;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
   }
 }
 .hidden {
