@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     background-color: #fcf9ed;
-    font-family: "Helvetica Neue", Avenir, sans-serif;
+    font-family: "Avenir", sans-serif;
   }
 
   a {
@@ -560,12 +560,19 @@
     display: none !important;
   }
 
+  .noweb {
+    display: none;
+  }
+
+  #checkbox {
+    display: none;
+  }
+
   body {
     margin: 0;
     padding: 0;
     background-color: #fcf9ed;
-    font-family: "Helvetica Neue", Avenir, sans-serif;
-    /*change to sass*/
+    font-family: "Avenir", sans-serif;
   }
 
   a {
@@ -577,6 +584,7 @@
   a:hover {
     color: #fcf9ed;
     text-decoration: underline;
+    font-weight: bolder;
   }
 
   /*NAVIGATION*/
@@ -588,9 +596,9 @@
     text-transform: uppercase;
     text-align: center;
     float: left;
-    width: 15%;
-    font-size: 60%;
-    padding-top: 25px;
+    width: 18%;
+    font-size: 80%;
+    padding-top: 70px;
   }
 
   #menu {
@@ -599,7 +607,7 @@
     background-color: black;
     margin-top: -58%;
     z-index: 1;
-    height: 60px;
+    height: 100px;
     width: 100%;
     text-align: center;
   }
@@ -616,67 +624,27 @@
   #header h1 {
     color: #ffd21f;
     position: absolute;
-    top: 40%;
-    font-size: 1200%;
-    /*change with media queries*/
-    margin-left: 20px;
+    top: 20%;
+    font-size: 1000%;
+    margin-left: 3%;
     line-height: 135px;
+    overflow: hidden;
+  }
+
+  #headerImg {
+    width: 100%;
   }
 
   /*MEET THE TEAM */
-  #team {
-    position: absolute;
-    -ms-transform: skewY(20deg);
-    -webkit-transform: skewY(20deg);
-    transform: skewY(20deg);
-    overflow: hidden;
-    margin-top: -100px;
-    z-index: -2;
-  }
-
-  #team span {
-    display: block;
-    width: 100px;
-    height: 5px;
-    position: absolute;
-    top: 107%;
-    margin-left: 60%;
-    background: #fcf9ed;
-  }
-
-  #team p {
-    color: #fcf9ed;
-    position: absolute;
-    top: 60%;
-    text-align: right;
-    font-size: 120%;
-    /*change with media queries*/
-    margin-left: 10%;
-    -ms-transform: skewY(-20deg);
-    -webkit-transform: skewY(-20deg);
-    transform: skewY(-20deg);
-    padding-right: 10%;
-  }
-
-  .yellowLine {
-    background: #ffd21f;
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    margin-top: -18%;
-    clear: both;
-  }
-
-  /*teamWeb*/
   #teamWeb {
-    width: 1280px;
+    width: 100%;
     clear: both;
     overflow: hidden;
     margin-bottom: 100px;
   }
 
   #teamImgWeb {
-    width: 640px;
+    width: 50%;
     height: auto;
     float: left;
     clear: both;
@@ -685,225 +653,525 @@
   #teamWeb p {
     float: right;
     text-align: center;
-    width: 540px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 200px;
-    line-height: 40px;
-    font-size: 18px;
+    width: 40%;
+    font-size: 1.2em;
+    padding: 5%;
     font-family: "Avenir", sans-serif;
   }
 
-  /*MEET TEAM*/
-  #meetTeam {
-    width: 1280px;
-    height: 427px;
-    clear: both;
+  #theTeam p {
+    display: none;
+  }
+
+  #team {
+    position: relative;
     display: block;
   }
 
-  /*ALLISON*/
-  #alli {
+  #team h1 {
+    color: #fcf9ed;
+    text-align: center;
+    font-size: 2.4em;
+    position: absolute;
+    background-color: #ffd21f;
+    width: 100%;
+    margin-top: 40%;
+    height: 125px;
+  }
+
+  #team h1 br {
+    display: none;
+  }
+
+  #team span {
     display: block;
-    height: auto;
-    width: 640px;
+    width: 10%;
+    height: 5px;
+    position: absolute;
+    text-align: center;
+    background: #fcf9ed;
+    margin-left: 45%;
+    margin-right: 45%;
   }
 
-  .alliImg {
-    width: 320px;
-    height: auto;
+  #theTeam {
+    width: 100%;
+    text-align: center;
+  }
+
+  #team p {
+    color: #5f5e5e;
+    position: absolute;
+    text-align: center;
+    font-size: 120%;
+    margin-left: 10%;
+    padding-right: 10%;
+    margin-top: 10%;
+  }
+
+  /*ALLISON AND SORAYA*/
+  .noweb {
+    display: none;
+  }
+
+  .contents {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .squares {
     float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+    background-color: #fcf9ed;
   }
 
-  #alliTitle {
-    color: #000;
-    text-align: center;
-    font-size: 30px;
-  }
-
-  #alliBio {
-    color: black;
-    position: block;
-    text-align: center;
-    width: 320px;
-    float: left;
-  }
-
-  #alliBio p {
-    position: block;
-    text-align: center;
-    font-size: 0.9em;
+  .rss {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
   }
 
   /*SORAYA*/
-  #soraya {
-    display: block;
-    height: auto;
-    float: left;
-    width: 640px;
-  }
-
-  .sorayaImg {
-    margin-top: -100px;
-    margin-bottom: -200px;
-    width: 320px;
-    height: auto;
-    float: left;
-  }
-
-  #sorayaTitle {
-    color: #000;
-    text-align: center;
-    font-size: 30px;
-  }
-
-  #sorayaBio {
-    color: black;
-    position: block;
-    text-align: center;
-    width: 320px;
-    float: left;
-    margin-left: 320px;
-  }
-
-  #sorayaBio p {
-    position: block;
-    text-align: center;
-    font-size: 0.9em;
-    float: right;
-  }
-
   #quote {
-    background-color: #c0b6ac;
-    color: black;
-    position: relative;
-    margin-top: 400px;
-    height: 274px;
-    width: 1280px;
-  }
-
-  #quote p {
-    position: absolute;
-    text-align: center;
-    font-size: 2em;
-    color: #fcf9ed;
-    width: 1280px;
-    float: right;
-    font-style: italic;
+    display: none;
   }
 
   /*PORTFOLIO*/
-  .portfolioImg {
-    width: 1280px;
-    height: 671px;
-    position: relative;
-  }
-
   #portfolio {
     position: relative;
     display: block;
     width: 100%;
-    margin-top: -100px;
-    clear: both;
+    margin-top: 20%;
+    text-align: center;
   }
 
   #portfolioText {
     color: #fcf9ed;
     position: absolute;
-    top: 30%;
+    top: 60%;
     text-align: center;
-    font-size: 3.4em;
-    margin-left: 480px;
+    font-size: 3em;
+    width: 100%;
   }
 
   #portfolioAbout {
-    width: 1100px;
     height: 300px;
-    clear: both;
-    padding-left: 90px;
-    padding-right: 90px;
     text-align: center;
-    padding-top: 50px;
-    line-height: 35px;
-    font-family: "Avenir", sans-serif;
   }
 
-  /*PORTFOLIO: Web Design*/
+  #portfolioText br {
+    display: none;
+  }
+
+  #portfolioAbout p {
+    text-align: center;
+    color: #5f5e5e;
+    font-size: 1.8em;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    float: left;
+    margin-top: 7%;
+  }
+
   #webDesign {
-    width: 1280px;
-    overflow: hidden;
+    background-color: #ffd21f;
+    display: block;
+    text-align: right;
+    height: 300px;
+    -ms-transform: skewY(-5deg);
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+  }
+
+  #webDesign h2 {
+    color: #5f5e5e;
+    font-size: 2.4em;
+    padding: 20px;
+    text-align: right;
+    -ms-transform: skewY(5deg);
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+  }
+
+  #webDesign p {
+    color: #5f5e5e;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    -ms-transform: skewY(5deg);
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+    padding-left: 5%;
+    padding-right: 20%;
+  }
+
+  .webDesignImg {
+    z-index: -1;
+    position: relative;
+    -ms-transform: skewY(5deg);
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+    width: 50%;
+    float: right;
+    margin-top: 15%;
   }
 
   #webDesignText {
-    width: 40%;
-    /*640px;*/
-    height: 640px;
-    font-size: 18px;
-    line-height: 35px;
-    text-align: center;
-    float: left;
-    padding-top: 200px;
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-
-  #webDesignImg {
+    position: relative;
+    display: block;
+    height: 300px;
     width: 50%;
-    /*640px;*/
     float: left;
-    /*clear: both;*/
+    margin-top: 5%;
+    z-index: -1;
   }
 
-  #webDesignA {
-    background-color: #ffd21f;
-    height: 100px;
-    -ms-transform: skewY(-3deg);
-    /* IE 9 */
-    -webkit-transform: skewY(-3deg);
-    /* Safari */
-    transform: skewY(-3deg);
-    width: 100%;
+  #webDesignText p {
+    color: #5f5e5e;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    padding: 3%;
   }
 
-  #webDesignA h2 p::first-letter {
-    -ms-transform: skewY(3deg);
-    /* IE 9 */
-    -webkit-transform: skewY(3deg);
-    /* Safari */
-    transform: skewY(3deg);
-  }
-
-  #webDesignA h2 {
-    color: #c0b6ac;
-  }
-
-  #webDesign p:first-child {
-    color: #c0b6ac;
-  }
-
-  /*PORTFOLIO: GRAPHIC DESIGN*/
   #graphicDesign {
-    width: 100%;
-    display: inline-block;
+    background-color: #ffd21f;
+    display: block;
+    text-align: center;
+    height: 300px;
+    -ms-transform: skewY(5deg);
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+    margin-top: 45%;
   }
 
-  .gdImg {
-    width: 320px;
-    height: 320px;
-    padding-top: 16px;
-    float: left;
+  #graphicDesign h2 {
+    color: #5f5e5e;
+    font-size: 2.4em;
+    margin-left: 5px;
+    padding-top: 5%;
+    text-align: center;
+    margin-top: 20%;
+    -ms-transform: skewY(-5deg);
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
   }
 
-  .logoDesc p {
-    background-color: #C0B6AC;
-    width: 15%;
-    height: 200px;
-    float: left;
-    padding-top: 120px;
+  #graphicDesign p {
+    color: #5f5e5e;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    position: absolute;
+    display: block;
     padding-right: 5%;
     padding-left: 5%;
+    -ms-transform: skewY(-5deg);
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+  }
+
+  #graphicDesignText {
+    width: 100%;
+    background-color: #c0b6ac;
+    margin-top: 10%;
+  }
+
+  #mi {
+    margin-top: 8%;
+    cursor: pointer;
+  }
+
+  #logotext1 {
+    background-color: #c0b6ac;
+    color: #fcf9ed;
     text-align: center;
-    font-family: "Avenir", sans-serif;
+  }
+
+  #seaStudios {
+    margin-top: 8%;
+    cursor: pointer;
+  }
+
+  #logotext2 {
+    background-color: #c0b6ac;
+    color: #fcf9ed;
+    text-align: center;
+  }
+
+  #seaStudios:hover {
+    opacity: 0.8;
+  }
+
+  #mi:hover {
+    opacity: 0.8;
+  }
+
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 1.6em;
+  }
+
+  .content .rs {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .square {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+    background-color: #fcf9ed;
+  }
+
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #myImg:hover {
+    opacity: 0.7;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 105px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #5f5e5e;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 30%;
+    max-width: 700px;
+  }
+
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.3s;
+    animation-name: zoom;
+    animation-duration: 0.3s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  .close {
+    position: absolute;
+    text-decoration: underline;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  .close:hover {
+    color: #efefef;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #lightbox {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+
+  /*PHOTOGRAPHY*/
+  #photography {
+    background-color: #ffd21f;
+    height: 300px;
+    margin-top: 45%;
+    -ms-transform: skewY(-5deg);
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+  }
+
+  #photography h2 {
+    color: #5f5e5e;
+    font-size: 2.4em;
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 10%;
+    -ms-transform: skewY(5deg);
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+  }
+
+  #photography p {
+    color: #5f5e5e;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    -ms-transform: skewY(5deg);
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+  }
+
+  #photographyImgs {
+    cursor: pointer;
+  }
+
+  #photographyImgs img:hover {
+    opacity: 0.7;
+  }
+
+  /*CONTACT US*/
+  #contact h2 {
+    color: #fcf9ed;
+    text-align: center;
+    font-size: 2.4em;
+    margin-top: -50%;
+  }
+
+  #contactForm {
+    float: left;
+    letter-spacing: 0.5px;
+    font: 20px arial, sans-serif;
+    line-height: 3em;
+    padding: 10%;
+    width: 80%;
+    margin-top: 30%;
+  }
+
+  #contactForm label {
+    display: block;
+    color: #5f5e5e;
+  }
+
+  #submit {
+    color: #5f5e5e;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #ffd21f;
+    width: 20% !important;
+    cursor: pointer;
+  }
+
+  #contactForm input {
+    width: 100%;
+    height: 30px;
+  }
+
+  #comments {
+    width: 100%;
+  }
+
+  /*FOOTER*/
+  #bottom {
+    background-color: #c0b6ac;
+    width: 100%;
+    height: 80px;
+    margin-top: 100%;
+  }
+
+  footer img {
+    height: 50%;
+    margin-top: 20px;
+    margin-right: 15px;
+    float: right;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+  }
+
+  /*SLIDER*/
+  #imageContainer {
+    width: 800px;
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 5%;
+  }
+
+  #photoImages {
+    position: relative;
+    width: 10400px;
+    right: 0px;
+    transition: all 0s;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
+  }
+
+  #photoImages img {
+    float: left;
+  }
+
+  #next {
+    float: right;
+    width: 40px;
+    background: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: -15%;
+  }
+
+  #previous {
+    float: left;
+    width: 40px;
+    background: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: -15%;
+  }
+
+  #slider {
+    margin-top: 20px;
+    background: #000000;
   }
 }
 @media (max-width: 479px) {
@@ -911,7 +1179,7 @@
     margin: 0;
     padding: 0;
     background-color: #fcf9ed;
-    font-family: "Helvetica Neue", Avenir, sans-serif;
+    font-family: "Avenir", sans-serif;
   }
 
   a {
