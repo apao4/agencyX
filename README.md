@@ -11,8 +11,8 @@ This readme will give you a rundown on the running of our application, who creat
 ## Built With
 
 * Git Hub - used to manage project
-  Gulp - used to convert SASS to CSS
-  Sass - used to minimize repetitive CSS
+* Gulp - used to convert SASS to CSS
+* Sass - used to minimize repetitive CSS
 
 
 ## Authors
