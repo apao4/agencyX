@@ -22,6 +22,7 @@
 	
 <nav role="navigation">
   <div id="menuToggle">
+	  <h2 class="hidden">Navigation</h2>
   
     <input id="checkbox" type="checkbox" />
     
@@ -46,7 +47,7 @@
 	<div id="team">
 	<img class="teamImg png" src="images/duo.png" alt="The Team" width="100%" height="auto">
 	<img class="teamImg jpg notab noweb" src="images/duo.jpeg" alt="The Team" width="100%" height="auto">
-<div id="theTeam"><h1 id="teamTitle">MEET THE <br> TEAM <span></span> </h1>
+<div id="theTeam"><h2 id="teamTitle">MEET THE <br> TEAM <span></span> </h2>
 		<p>Welcome to Engage Designs! <br> We are a duo based in Toronto that specializes in web design and development, graphic design, and photography.</p>
 		
 		<div class="yellowLine"></div>
@@ -71,7 +72,9 @@
 	<div class="squares" id="alliBio">
 		<p class="contents">
 			From an early age, Allison’s parents enrolled her in various extracurriculars, one being art. She quickly found a love in self-expression through various art forms.  With the evolution of her artistic skills, she soon found a passion for graphic design and decided to pursue it.
+			<button class="jpg notab" id="allisonB" type="button">Contact Info</button>
 		</p>
+		
 	</div>
 	
 	<div class="squares" id="soraya">
@@ -83,7 +86,9 @@
 	<div class="squares" id="sorayaBio">
 		<p class="contents">
 		Soraya was raised on a farm, which would soon inspire her artistic style. From a young age, she took an interest in photography as she and her father bonded over the hobby. Through her love for photography, she explored her other artistic skills and soon found a passion for web development.  
-		</p>
+		<button class="jpg notab" id="sorayaB" type="button">Contact Info</button>
+	</p>
+		
 	</div>
 		
 	<div id="quote">
@@ -152,17 +157,27 @@ We at Engage Designs believe a company’s success begins with their webpage.  T
 			</div>
 
 	</div>
-	
-	<div id="myModal" class="modal">
-
-  <!-- The Close Button -->
+	<!--IMAGE LIGHTBOX-->
+<div id="myModal" class="modal">
   <span class="close">close</span>
-
-  <!-- Modal Content (The Image) -->
   <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
   <div id="caption"></div>
+</div>
+
+<!--ALLI INFO MODAL-->
+<div id="memModal" class="modals">
+	<div class="modal-contents">
+		<span class="closes">&times;</span>
+		<p>Phone: (123) 456-789<br>Email: a_pao4@fanshaweonline.ca</p>
+	</div>
+</div>
+
+<!--SORAYA INFO MODAL-->
+<div id="memModals" class="modals">
+	<div class="modal-contents">
+		<span class="closed">&times;</span>
+		<p>Phone: (987) 654-321<br>Email: spittis@fanshaweonline.ca</p>
+	</div>
 </div>
 
 <div id="photography">
@@ -248,12 +263,13 @@ We at Engage Designs believe a company’s success begins with their webpage.  T
 
 <footer id="bottom">
 	<span><img src="images/facebook.svg" alt="facebook" title="facebook">
-	<img src="images/instagram.svg" alt="instagram" title="instagram"></span>
+	<a target="_blank" href="https://www.instagram.com/engage.designs/"><img src="images/instagram.svg" alt="instagram" title="instagram"></span></a>
 </footer>
 
 
   <script src="js/lightbox.js"></script>
   <script src="js/gulpfile.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/memberdata.js"></script>
 </body>
 </html>
