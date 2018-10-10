@@ -144,7 +144,7 @@ overflow: hidden;
 		display: block;
 	}
 	
-	#team h1
+	#team h2
 	{
 		color: $main-app-color;
 		text-align: center;
@@ -157,7 +157,7 @@ overflow: hidden;
 	}
 
 
-	#team h1 br{
+	#team h2 br{
 		display: none;
 	}
 	
@@ -495,7 +495,6 @@ overflow: hidden;
 	
 	#myImg:hover {opacity: 0.7;}
 	
-	/* The Modal (background) */
 	.modal {
 		display: none;
 		position: fixed;
@@ -510,7 +509,7 @@ overflow: hidden;
 		background-color: rgba(0,0,0,0.9);
 	}
 	
-	/* Modal Content (Image) */
+
 	.modal-content {
 		margin: auto;
 		display: block;
@@ -518,7 +517,7 @@ overflow: hidden;
 		max-width: 700px;
 	}
 	
-	/* Caption of Modal Image (Image Text) - Same Width as the Image */
+
 	#caption {
 		margin: auto;
 		display: block;
@@ -530,7 +529,7 @@ overflow: hidden;
 		height: 150px;
 	}
 	
-	/* Add Animation - Zoom in the Modal */
+
 	.modal-content, #caption 
 	{ 
 		-webkit-animation-name: zoom;
@@ -586,6 +585,42 @@ overflow: hidden;
 	 {
 			width: 80%;
 	 }
+
+	 /*MEMBER MODAL*/
+	 .modals {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 120px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.modal-contents {
+		background-color: $yellow-font-color;
+		margin: auto;
+		padding: 20px;
+		border: 3px solid $dark-grey;
+		width: 70%;
+	}
+
+	.closes, .closed {
+		color: $light-grey;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	
+	.closes:hover,
+	.closes:focus, .closed:hover, .closed:focus {
+		color: $dark-grey;
+		text-decoration: none;
+		cursor: pointer;
+	}
 	 
 	
 	
@@ -596,8 +631,8 @@ overflow: hidden;
 		height: 300px;
 		margin-top: 45%;
 		-ms-transform: skewY(-5deg);
--webkit-transform: skewY(-5deg);
-transform: skewY(-5deg);
+		-webkit-transform: skewY(-5deg);
+		transform: skewY(-5deg);
 		}
 		
 		#photography h2
@@ -751,4 +786,14 @@ transform: skewY(5deg);
 }
 
 	
+}
+
+
+/*POP UP*/
+
+#sorayaB, #allisonB
+{
+	padding: 5px;
+	cursor: pointer;
+	border-color: $dark-grey;
 }

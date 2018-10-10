@@ -80,7 +80,7 @@
     display: block;
   }
 
-  #team h1 {
+  #team h2 {
     color: #fcf9ed;
     text-align: center;
     font-size: 2.4em;
@@ -91,7 +91,7 @@
     height: 90px;
   }
 
-  #team h1 br {
+  #team h2 br {
     display: none;
   }
 
@@ -668,7 +668,7 @@
     display: block;
   }
 
-  #team h1 {
+  #team h2 {
     color: #fcf9ed;
     text-align: center;
     font-size: 2.4em;
@@ -679,7 +679,7 @@
     height: 125px;
   }
 
-  #team h1 br {
+  #team h2 br {
     display: none;
   }
 
@@ -945,7 +945,6 @@
     opacity: 0.7;
   }
 
-  /* The Modal (background) */
   .modal {
     display: none;
     position: fixed;
@@ -960,7 +959,6 @@
     background-color: rgba(0, 0, 0, 0.9);
   }
 
-  /* Modal Content (Image) */
   .modal-content {
     margin: auto;
     display: block;
@@ -968,7 +966,6 @@
     max-width: 700px;
   }
 
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
   #caption {
     margin: auto;
     display: block;
@@ -980,7 +977,6 @@
     height: 150px;
   }
 
-  /* Add Animation - Zoom in the Modal */
   .modal-content, #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.3s;
@@ -1028,6 +1024,42 @@
 
   .modal-content {
     width: 80%;
+  }
+
+  /*MEMBER MODAL*/
+  .modals {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-contents {
+    background-color: #ffd21f;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid #5f5e5e;
+    width: 70%;
+  }
+
+  .closes, .closed {
+    color: #c0b6ac;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .closes:hover,
+.closes:focus, .closed:hover, .closed:focus {
+    color: #5f5e5e;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   /*PHOTOGRAPHY*/
@@ -1174,6 +1206,13 @@
     background: #000000;
   }
 }
+/*POP UP*/
+#sorayaB, #allisonB {
+  padding: 5px;
+  cursor: pointer;
+  border-color: #5f5e5e;
+}
+
 @media (max-width: 479px) {
   body {
     margin: 0;
@@ -1291,7 +1330,7 @@
     display: block;
   }
 
-  #team h1 {
+  #team h2 {
     color: #fcf9ed;
     position: absolute;
     top: 5%;
