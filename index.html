@@ -45,7 +45,7 @@
 	
 	<div id="team">
 	<img class="teamImg png" src="images/duo.png" alt="The Team" width="100%" height="auto">
-	<img class="teamImg jpg notab" src="images/duo.jpeg" alt="The Team" width="100%" height="auto">
+	<img class="teamImg jpg notab noweb" src="images/duo.jpeg" alt="The Team" width="100%" height="auto">
 <div id="theTeam"><h1 id="teamTitle">MEET THE <br> TEAM <span></span> </h1>
 		<p>Welcome to Engage Designs! <br> We are a duo based in Toronto that specializes in web design and development, graphic design, and photography.</p>
 		
@@ -61,27 +61,27 @@
   </div>
 </div>
 	
-	<div id="alli">
+	<div class="squares" id="alli">
 		<img class="alliImg png" src="images/alli.png" alt="Allison Pao" width="100%" height="auto">
-		<img class="alliImg jpg" src="images/alli.jpeg" alt="Allison Pao" width="100%" height="auto"> 
-		<img class="sorayaImg jpg" src="images/soraya.jpeg" alt="SorayaPittis">
+		<img class="alliImg contents rss jpg" src="images/alli.jpeg" alt="Allison Pao" width="100%" height="auto"> 
+		<img class="sorayaImg jpg noweb" src="images/soraya.jpeg" alt="SorayaPittis">
 		<h2 id="alliTitle">ALLISON<br>PAO</h2>
 	</div>
 	
-	<div id="alliBio">
-		<p>
+	<div class="squares" id="alliBio">
+		<p class="contents">
 			From an early age, Allison’s parents enrolled her in various extracurriculars, one being art. She quickly found a love in self-expression through various art forms.  With the evolution of her artistic skills, she soon found a passion for graphic design and decided to pursue it.
 		</p>
 	</div>
 	
-	<div id="soraya">
+	<div class="squares" id="soraya">
 		<img class="sorayaImg png" src="images/soraya.png" alt="Soraya Pittis" width="100%" height="auto">
-		<img class="sorayaImg jpg notab" src="images/soraya.jpeg" alt="Soraya Pittis" width="100%" height="auto"> 
+		<img class="sorayaImg contents rss jpg  notab" src="images/soraya.jpeg" alt="Soraya Pittis" width="100%" height="auto"> 
 		<h2 id="sorayaTitle">SORAYA<br>PITTIS</h2>
 	</div>
 	
-	<div id="sorayaBio">
-		<p>
+	<div class="squares" id="sorayaBio">
+		<p class="contents">
 		Soraya was raised on a farm, which would soon inspire her artistic style. From a young age, she took an interest in photography as she and her father bonded over the hobby. Through her love for photography, she explored her other artistic skills and soon found a passion for web development.  
 		</p>
 	</div>
@@ -113,18 +113,18 @@
 		<p>
 We at Engage Designs believe a company’s success begins with their webpage.  This is the first thing most consumers will see which can make or break their opinion.
  		</p>
-			
+
 		<div class="webDesignImg">
 			<img src="images/lsfc-screen.jpg" alt="LSFC website" width="100%" height="auto">
 		</div>
 	</div>
-	
+
 	<div id="webDesignText">
 		<p>
 		With plenty of experience with web design and development, we have accumulated plenty of pieces for our portfolio.  From working with startup companies and young clients to larger foundations, we have learned plenty over the years and still strive to learn more. 
 		</p>
 	</div>
-	
+
 	<div id="graphicDesign">
 		<h2>GRAPHIC DESIGN</h2>
 		<p>
@@ -134,18 +134,21 @@ We at Engage Designs believe a company’s success begins with their webpage.  T
 	
 	<div id="graphicDesignText">
 		<div id="lightbox1">
-			<div class="square">
-			<img class="logo content rs" id="mi" src="images/mi-logo.jpg" alt="Mi Logo" title="Mi Logo">
+			<div class="square squares">
+			<img class="logo content rs contents rss" id="mi" src="images/mi-logo.jpg" alt="Mi Logo" title="Mi Logo">
 			</div>
 			<div class="square">
-			<p class="content" id="logotext1">We are super enthusiastic individuals who love meeting and working with new people.</p>
+			<p class="content contents" id="logotext1">We are super enthusiastic individuals who love meeting and working with new people.</p>
 			</div>
 		</div>
-			<div class="square">
-			<p class="content" id="logotext2">Sea Studios hired us to completely rebrand their business. So, we created this logo.</p>
+		<div class="square notab jpg">
+			<img class="logo content rs contents rss" id="seaStudios" src="images/sea-studios.jpg" alt="Sea Studios Logo" title="Sea Studio Logo">
 			</div>
-			<div class="square">
-			<img class="logo content rs" id="seaStudios" src="images/sea-studios.jpg" alt="Sea Studios Logo" title="Sea Studio Logo">
+			<div class="square squares">
+			<p class="content contents" id="logotext2">Sea Studios hired us to completely rebrand their business. So, we created this logo.</p>
+			</div>
+			<div class="square noweb">
+			<img class="logo content rs contents rss" id="seaStudios" src="images/sea-studios.jpg" alt="Sea Studios Logo" title="Sea Studio Logo">
 			</div>
 
 	</div>
@@ -168,7 +171,7 @@ We at Engage Designs believe a company’s success begins with their webpage.  T
 		</p>
 </div>
 
-<div id="photographyImgs">
+<div class="noweb" id="photographyImgs">
 		<div class="square">
 			<img class="content rs logo" src="images/tablet-photo1.jpg" alt="Santorini, Greece" title="Santorini, Greece">
 		</div>
@@ -182,6 +185,46 @@ We at Engage Designs believe a company’s success begins with their webpage.  T
 				<img class="content rs logo" src="images/tablet-photo4.jpg" alt="Venice, Italy" title="Venice, Italy">
 		</div>
 </div>
+
+
+
+<div class="notab jpg" id="slider">
+
+	
+	<section id="imageContainer">
+<h2 class="hide">Slider Images</h2>
+	<div id="photoImages">
+		<img class="image" src="images/web-photo1.jpg" alt="Santorini, Greece" title="Santorini, Greece" height="auto" width="800px" data-offset="0"/>
+		<img class="image" src="images/web-photo2.jpg" alt="Friuli Venezia Giulia, Italy" title="Friuli Venezia Giulia, Italy" height="auto" width="800px" data-offset="1"/>
+		<img class="image" src="images/web-photo3.jpg" alt="Friuli Venezia Giulia, Italy" title="Friuli Venezia Giulia, Italy" height="auto" width="800px"  data-offset="2"/>
+		<img class="image" src="images/web-photo4.jpg" alt="Venice, Italy" title="Venice, Italy" height="auto" width="800px" data-offset="3"/>
+	
+	</div>
+	
+</section>
+
+	 <div id="buttons">
+	 <button id="previous"><img src="images/previous.png" alt="arrow" width="30%" height="auto"></button>
+	 <button id="next"><img src="images/next.png" alt="arrow"  width="30%" height="auto"></button>
+	 </div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="contact">
 	<img src= "images/toronto.png" alt="toronto" title="toronto" width="100%">
@@ -211,5 +254,6 @@ We at Engage Designs believe a company’s success begins with their webpage.  T
 
   <script src="js/lightbox.js"></script>
   <script src="js/gulpfile.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>
